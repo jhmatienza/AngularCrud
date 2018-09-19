@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
@@ -12,4 +12,7 @@ export class CreateEmployeeComponent implements OnInit {
   ngOnInit() {
   }
 
+  saveEmployee(emplForm: NgForm): void{
+    console.log(emplForm);
+  }
 }
